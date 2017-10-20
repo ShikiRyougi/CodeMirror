@@ -14,7 +14,7 @@
   "use strict";
   var Pos = CodeMirror.Pos;
   var svgNS = "http://www.w3.org/2000/svg";
-
+  var {diff_match_patch, DIFF_INSERT, DIFF_DELETE, DIFF_EQUAL} = require('diff_match_patch')
   function DiffView(mv, type) {
     this.mv = mv;
     this.type = type;
